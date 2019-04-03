@@ -80,8 +80,8 @@ class MyVehicleCard extends Component {
                <div><p><strong>Vehicle Type:</strong> <span className={classes.val}>{this.props.details.vehicle_type}</span></p></div>
                {
                    this.props.details.price 
-                   ? <div><p><strong>Price:</strong> <span className={classes.val}>{this.props.details.price}</span></p></div>
-                   : <div><p><strong>Price Per Day:</strong> <span className={classes.val}>{this.props.details.price_per_day}</span></p></div>
+                   ? <div><p><strong>Price:</strong> <span className={classes.val}>&#x20B9;{this.props.details.price.toLocaleString('en-IN')}</span></p></div>
+                   : <div><p><strong>Price Per Day:</strong> <span className={classes.val}>&#x20B9;{this.props.details.price_per_day.toLocaleString('en-IN')}</span></p></div>
                }
 
          </div>

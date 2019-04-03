@@ -61,7 +61,7 @@ class SellVehicle extends Component {
         show: false,
         loading: false,
         width: window.innerWidth,
-
+        proferror: false
     }
 
     componentWillMount() {
@@ -98,7 +98,7 @@ class SellVehicle extends Component {
         window.scrollTo(0, 0);
 
         if(this.props.address === null || this.props.pincode === null || this.props.state === null || this.props.city === null || this.props.address === '' || this.props.pincode === '' || this.props.state === '' || this.props.city === ''){
-            this.setState({show: true})
+            this.setState({show: true, proferror: true})
         }
 
         axios.get('/fetch-vehicle-type').then(result => {
@@ -350,9 +350,20 @@ class SellVehicle extends Component {
     }
 
     formSubmit = (event) => {
-        const error = this.validate();
-        if(!error){
-            event.preventDefault();
+        event.preventDefault();
+
+        if(this.state.proferror === true){
+            Alert.warning('Kindly Update Your Profile First', {
+                position: 'top',
+                effect: 'bouncyflip',
+                timeout: 3000,
+                html: false
+            });
+        }
+        else {
+         const error = this.validate();
+
+         if(!error){
             this.setState({
                 loading: true
             })
@@ -413,6 +424,8 @@ class SellVehicle extends Component {
         
         }
       
+        }
+        
     }
 
     

@@ -322,7 +322,13 @@ class VehicleHistoryCard extends Component {
                  <div className={classes.modalHeader}>
                   <div className={classes.round}> {
                             this.props.image === null
-                            ? <h2 style={{textAlign: "center",color: "black" }}>{this.props.fname.charAt(0)} </h2>
+                            ? <h2 style={{textAlign: "center",color: "black", 
+                            objectFit: 'cover',
+                            position: 'relative',
+                            display: 'inline-block',
+                            borderRadius: '50%',
+                            width: '100%',
+                            height: '100%' }}>{this.props.fname.charAt(0)} </h2>
                             : <img className={classes.pp} alt="Im" src={this.props.image}/>
                         }
                   </div>

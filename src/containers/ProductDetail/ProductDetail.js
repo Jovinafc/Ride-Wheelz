@@ -9,6 +9,8 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import ReactStars from 'react-stars'
 import ReviewDiv from './ReviewDiv';
+import Alert from 'react-s-alert';
+
 
 class ProductDetail extends Component {
 
@@ -143,9 +145,16 @@ class ProductDetail extends Component {
     updateQuantity = () => {
         axios.post('/direct-buy-check', {user_id: localStorage.getItem('userId'), accessory_id: this.state.product.accessory_id, quantity: this.state.counter} )
         .then(response => {
-            alert(response.data);
+            // alert(response.data);
+            
             // if(response.data === 'Insuffiecient')
             if(response.data === 'Insufficient Stock'){
+                Alert.warning('Out of Stock', {
+                    position: 'top',
+                    effect: 'bouncyflip',
+                    timeout: 3000,
+                    html: false
+                });    
                 this.setState({
                     buyButton: false
                 })
@@ -162,7 +171,12 @@ class ProductDetail extends Component {
         axios.post('/direct-buy-check', {user_id: localStorage.getItem('userId'), accessory_id: this.state.product.accessory_id, quantity: this.state.counter})
         .then(response => {
             if(response.data === 'Insufficient Stock'){
-                alert("Insufficient Data")
+                Alert.warning('Out of Stock', {
+                    position: 'top',
+                    effect: 'bouncyflip',
+                    timeout: 3000,
+                    html: false
+                });    
                 this.setState({
                     buyButton: false,
                     direct: false

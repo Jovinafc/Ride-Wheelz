@@ -486,7 +486,7 @@ dateHandler = (moment) => {
             old_passwordError: 'Please Enter Valid Password'
 
             })
-            errors.old_passwordError = "Enter Valid Password"
+            errors.old_passwordError = "Should Contain atleast one capital letter,one small letter and a digit"
         }
 
 
@@ -685,7 +685,7 @@ dateHandler = (moment) => {
                          <div>
                      <label htmlFor="old_password">Current Password<span style={{color: 'red'}}>*</span></label>
                      <Input type="password" className="form-control" id="old_password" changed={this.oldPasswordHandler} value={this.state.old_password}/>
-                     <span style={{color: 'red'}}>{this.state.old_passwordError}</span>   
+                     <span style={{color: 'red', fontSize: '0.7em'}}>{this.state.old_passwordError}</span>   
 
 
                          </div>

@@ -60,7 +60,9 @@ class Lend extends Component {
         tempType: '',
         sample: '',
         show: false,
-        loading: false
+        loading: false,
+        proferror: false
+
     }
 
     details = () => {
@@ -83,7 +85,7 @@ class Lend extends Component {
         window.scrollTo(0, 0);
 
         if(this.props.address === null || this.props.pincode === null || this.props.state === null || this.props.city === null || this.props.address === '' || this.props.pincode === '' || this.props.state === '' || this.props.city === ''){
-            this.setState({show: true})
+            this.setState({show: true, proferror: true})
         }
 
 
@@ -267,65 +269,77 @@ class Lend extends Component {
     formSubmit = (event) => {
         event.preventDefault();
 
-        this.setState({
-            loading: true
-        })
-        const fd = new FormData();
-        fd.append('image',this.state.formdata.image);
-        axios.post('/image',fd).then(()=>{
-            
-            const sd = new FormData(); 
-            sd.append('documentImage', this.state.formdata.documents) 
-            axios.post('/documentImage', sd).then(res => {
-
-                axios.post('/store-vehicle-details',{vehicles:this.state.formdata})
-        .then((post) => {
-            Alert.info('Ad Posted', {
+        if(this.state.proferror){
+            Alert.warning('Kindly Update Your Profile First', {
                 position: 'top',
                 effect: 'bouncyflip',
                 timeout: 3000,
                 html: false
             });
+        }else {
             this.setState({
-                formdata: {
-                    type: '',
-                    brand: '',
-                    model: '',
-                    registration_state: '',
-                    fuel: '',
-                    //image: '',
-                    document: '',
-                    price_per_day: '',
-                    year: '',
-                    km_driven: '',
-                    number_plate: '',
-                    user_id: localStorage.getItem('userId')
-                  },
-                  imagePrev: '',
-                  documentPrev: '',
-                  loading: false
-            }) 
+                loading: true
+            })
+            const fd = new FormData();
+            fd.append('image',this.state.formdata.image);
+            axios.post('/image',fd).then(()=>{
                 
-            
-        }).catch(e => {
-            console.log(e);
-            Alert.warning('Some Error Occurred! Please Try Again', {
-                position: 'top',
-                effect: 'bouncyflip',
-                timeout: 3000,
-                html: false
-            });
-            this.setState({
-                loading: false
-            })    
-
+                const sd = new FormData(); 
+                sd.append('documentImage', this.state.formdata.documents) 
+                axios.post('/documentImage', sd).then(res => {
+    
+                    axios.post('/store-vehicle-details',{vehicles:this.state.formdata})
+            .then((post) => {
+                Alert.info('Ad Posted', {
+                    position: 'top',
+                    effect: 'bouncyflip',
+                    timeout: 3000,
+                    html: false
+                });
+                this.setState({
+                    formdata: {
+                        type: '',
+                        brand: '',
+                        model: '',
+                        registration_state: '',
+                        fuel: '',
+                        //image: '',
+                        document: '',
+                        price_per_day: '',
+                        year: '',
+                        km_driven: '',
+                        number_plate: '',
+                        user_id: localStorage.getItem('userId')
+                      },
+                      imagePrev: '',
+                      documentPrev: '',
+                      loading: false
+                }) 
+                    
+                
+            }).catch(e => {
+                console.log(e);
+                Alert.warning('Some Error Occurred! Please Try Again', {
+                    position: 'top',
+                    effect: 'bouncyflip',
+                    timeout: 3000,
+                    html: false
+                });
+                this.setState({
+                    loading: false
+                })    
+    
+            })
         })
-    })
-    this.setState({documentPrev: ''})    
-    this.setState({imagePrev:''});
+        this.setState({documentPrev: ''})    
+        this.setState({imagePrev:''});
+    
+            }).catch(e=> console.log(e))
+    
+        }
+               
 
-        }).catch(e=> console.log(e))
-        
+
     }
 
       handleImageChange = (e) => {

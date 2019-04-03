@@ -29,7 +29,7 @@ class card extends Component {
                         <h5 onClick={() => this.props.onCardClick(this.props.vehicle_id)}><NavLink to={'/vehicledetail/:'+this.props.vehicle_id}><strong>{this.props.name}</strong> {this.props.model}</NavLink></h5>
                         <div className={classes.price}>
                             <div className={classes.prices}>
-                             <h6 >&#x20B9; {this.props.price === null ? this.props.price_per_day.toLocaleString() : this.props.price.toLocaleString('en-IN')} 
+                             <h6 >&#x20B9; {this.props.price === null ? this.props.price_per_day.toLocaleString('en-IN') : this.props.price.toLocaleString('en-IN')} 
                                   <span className={classes.divider}></span>  
                             </h6>
                             {this.props.price_per_day !== null ? pd : null}
