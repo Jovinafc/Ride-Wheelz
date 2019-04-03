@@ -1,0 +1,315 @@
+.Container {
+    padding-top: 20px;
+    height: 700px;
+}
+
+.InnerContainer {
+    /* border: 1px solid blue; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    padding-left: 10%;
+    padding-top: 3%;
+    height: 1400px;
+} 
+
+.DateContainer {
+    /* border: 1px solid black; */
+    margin-right: 15%; 
+    height: 300px;
+    padding-top: 6%; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.Details {
+    margin-top: 2%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    width: 80%;
+    font-size: 1.5em;
+    padding: 5%;
+}
+
+
+
+.tables {
+    width: 90%;
+    margin: 5%;
+}
+
+.tables {
+    border: 1px solid black;
+    border: 1; 
+    border-collapse: collapse;
+}
+
+.trs{
+    border: 1px solid black;
+    border: 1; 
+}
+
+.tds{
+    border: 1px solid black;
+    border: 1; 
+}
+
+.firstCont {
+    display: flex;
+    border:1px solid black;
+    height: 100%;
+    padding: 2%;
+}
+
+.leftdiv{
+    /* border: 1px solid green; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+
+}
+
+.image {
+    width: 80%;
+    margin-left: 10%;
+    height: 55%;
+    /* border: 1px solid black; */
+    padding-left: 15%; 
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+ 
+
+}
+
+.img {
+    width: 80%;
+    margin-right: 30%;
+    /* height: 400px; */
+    height: 100%;
+    padding: 3%;
+}
+
+.details {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    height: 40%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    font-size: 1.2em;
+    padding: 1.5%;
+
+}
+
+.innerdetails {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.valueDetail {
+    color: blue;
+}
+
+.rightdiv {
+    /* border: 1px solid black; */
+    width: 35%;
+    font-size: 1.2em;
+    
+}
+
+.price {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    /* height: 80%; */
+    /* border: 1px solid orange; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    padding: 1.5%;   
+}
+
+.buttonCont {
+    margin-bottom: '12px';
+    display: flex;
+}
+
+.but {
+    margin-top: 5%;
+    margin-bottom: 5px;
+}
+
+.inputStart {
+    width: 50px;
+}
+
+.modernDiv {
+    padding-left: 10px;
+    border-radius: 2px 2px 2px 2px;
+    outline: none;
+    border-radius: 10px;
+    border-color: black;
+    /* background-color: rgb(20, 19, 19); */
+    color: black;
+    width: 70%;
+    opacity: 10%;
+}
+
+.reviewsCont {
+    margin-top: 10px;
+}
+
+.modalDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.ownerdet {
+    /* background: none;
+    border: none; */
+    margin-top: 20px;
+}
+
+.documentViewer {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 10%; */
+    border: 1px solid black;
+}
+
+.vehicledocument {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 500px){
+    .Container {
+        padding-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .firstCont {
+        display: grid;
+        grid-template-rows: 60% 40%; 
+        border:1px solid white;
+        height: auto;
+        grid-row-gap: 5px; 
+        flex-direction: column; 
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .leftdiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* height:50%; */
+        margin-bottom: 10px;
+    }
+
+    
+    .image {
+        margin-left: 10%;
+        padding-left: 10%; 
+        width:80%;
+        height: 40%;
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+    }
+    
+    .img {
+        width: 100%;
+        height: 100%;
+        padding-right: 15%;
+        margin-right: 0%;
+    }
+    
+    .details {
+        width: 90%;
+        height: 60%;
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+        font-size: 0.85em;
+    }
+
+    
+    .innerdetails {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+   
+    
+    .rightdiv {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 1.0em;  
+        /* height: 40%;         */
+    }
+    
+    .price {
+        width: 90%;
+        margin-left: 5%;
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+        
+      }
+    
+    .buttonCont {
+        margin-bottom: '12px';
+        display: flex;
+    }
+    
+    .but {
+        margin-top: 5%;
+        margin-bottom: 5px;
+    }
+    
+    .inputStart {
+        width: 50px;
+    }
+    
+    .modernDiv {
+        padding-left: 10px;
+        border-radius: 2px 2px 2px 2px;
+        outline: none;
+        border-radius: 10px;
+        border-color: black;
+        /* background-color: rgb(20, 19, 19); */
+        color: black;
+        width: 70%;
+        opacity: 10%;
+    }
+        
+    .valueDetail {
+        color: blue;
+    }
+    
+    .reviewsCont {
+        margin-top: 150px;
+    }
+
+    
+.ownerdet {
+    /* background: none;
+    border: none; */
+    margin-top: 10px;
+}
+    
+}

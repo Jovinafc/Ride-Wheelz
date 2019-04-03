@@ -1,0 +1,352 @@
+
+.pdcontainer {
+    /* border: 1px solid black; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    
+    width: 80%;
+    margin-left: 10%;
+    height: 700px;
+}
+
+.imgcontainer {
+    width: 40%;
+    margin-left: 30%;
+    height: 200px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+
+.input {
+    width: 2px;
+    size: 4;
+}
+
+.mainDiv {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    height: 550px;
+    padding: 2%;
+    /* flex-direction: column; */
+}
+
+.leftDiv {
+    width: 65%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    height:100%;
+
+}
+
+.imageCont {
+    width: 80%;
+    margin-left: 10%;
+    height: 50%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    padding-left: 15%; 
+    margin-top: 2%;
+
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+    margin-right: 30%;
+    border: 1px solid black;
+}
+
+.details {
+    height: 40%;
+    width: 90%;
+    margin-top: 2%;
+    padding: 2%;
+    margin-left: 5%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+
+}
+.rightDiv {
+    width: 35%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+}
+
+.price {
+    width: 80%;
+    margin-left: 10%;
+    height: 50%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-top: 5%;
+    padding-top: 3%;
+    padding: 2%;
+}
+
+.downRightDiv {
+    width: 80%;
+    margin-left: 10%;
+    height: 30%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-top: 10%;    
+    padding: 2%;
+}
+
+.quantity {
+    width: 80%;
+    display: flex;
+}
+
+.inputDiv {
+    width: 30px;
+    text-align: center;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 10px;    
+}
+
+.ratebut {
+    background: none;
+    border: none; 
+    color: #212121;
+    font-family: Roboto,Arial,sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ratebut:hover {
+    color: rgb(97, 97, 236);
+}
+
+
+.modalHeader {
+    position: relative;
+    display: flex;  
+    margin-left: 10px;
+    width: 100%;    
+}
+
+.round {
+    border-radius:  50%;
+    border: 1px solid black;
+    width: 15%;
+    /* margin-top: 6px; */
+    height:15%;
+    margin-right: 10px;
+}
+
+.pp {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.reviewsCont {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    text-align: center;
+}
+
+.valueDet {
+    color: blue;
+}
+
+@media(max-width:500px){
+    
+.pdcontainer {
+    /* border: 1px solid black; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    
+    width: 80%;
+    margin-left: 10%;
+    height: 700px;
+}
+
+.imgcontainer {
+    width: 40%;
+    margin-left: 30%;
+    height: 200px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.input {
+    width: 2px;
+    size: 4;
+}
+
+.mainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 2%;
+
+    
+    /* flex-direction: column; */
+}
+
+.leftDiv {
+    width: 90%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  */
+    margin-left:5%; 
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.imageCont {
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+    margin-bottom: 10%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    padding-left: 15%; 
+    margin-top: 2%;
+
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+    margin-right: 30%;
+    border: 1px solid black;
+}
+
+.details {
+    
+    height: auto;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border: 2px solid #eee;
+    margin-bottom: 5%;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+
+}
+.rightDiv {
+    width: 90%;
+    height: 35%;
+    margin-left: 5%;
+    padding-bottom : 10%; 
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+}
+
+.price {
+    width: 80%;
+    margin-left: 10%;
+    height: 55%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-top: 5%;
+    padding-top: 3%;
+}
+
+.downRightDiv {
+    width: 80%;
+    margin-left: 10%;
+    height: 30%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-top: 10%;    
+}
+
+.quantity {
+    width: 80%;
+    display: flex;
+}
+
+.inputDiv {
+    width: 30px;
+    text-align: center;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 10px;    
+}
+
+.ratebut {
+    background: none;
+    border: none; 
+    color: #212121;
+    font-family: Roboto,Arial,sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ratebut:hover {
+    color: rgb(97, 97, 236);
+}
+
+
+.modalHeader {
+    position: relative;
+    display: flex;  
+    margin-left: 10px;
+    width: 100%;    
+}
+
+.round {
+    border-radius:  50%;
+    border: 1px solid black;
+    width: 15%;
+    /* margin-top: 6px; */
+    height:15%;
+    margin-right: 10px;
+}
+
+.pp {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.reviewsCont {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    text-align: center;
+}
+
+.valueDet {
+    color: blue;
+}
+}

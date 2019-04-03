@@ -1,0 +1,115 @@
+.mainDiv {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    padding: 0.5%;
+}
+
+.topDiv {
+    display: flex;
+    height: 30%;
+}
+
+.imageContainer {
+    border-radius:  50%;
+    border: 1px solid black;
+    width: 5%;
+    height:90%;
+    margin-right: 10px;
+
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.namedate {
+    display: flex;
+    flex-direction: row;
+}
+.downDiv {
+    height: 65%
+}
+
+.ratingDiv {
+    margin-left: 60%;
+}
+
+.thumbs {
+    display: flex;
+    padding: 10px;
+}
+
+.thumbupdown {
+    margin-right: 10%;
+}
+
+@media(max-width:500px){
+    .mainDiv {
+        width: 90%;
+        height: 150px;
+        margin-left: 5%;
+        border: 1px solid black;
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    
+    .topDiv {
+        display: flex;
+        height: 30%;
+        width: 100%;
+    }
+    
+    .imageContainer {
+        border-radius:  50%;
+        border: 1px solid black;
+        width: 10%;
+        height:60%;
+        margin-right: 10px;
+    }
+    
+    .namedate {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        font-size: 0.8em;
+    }
+
+    .image {
+        position: relative;
+        display: inline-block;
+        object-fit: cover;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .downDiv {
+        height: 65%
+    }
+    
+    .ratingDiv {
+        margin-left: 0%;
+        width: 40%;
+    }
+    
+    .thumbs {
+        display: flex;
+        padding: 10px;
+    }
+    
+    .thumbupdown {
+        margin-right: 10%;
+    }
+}

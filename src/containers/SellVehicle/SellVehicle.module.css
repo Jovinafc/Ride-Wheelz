@@ -1,0 +1,259 @@
+@media(min-width:500px){
+    .Sell {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* flex-wrap: wrap */
+    }
+    
+    .Label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin:15px;
+    }
+    
+    .select {
+        width:150px;
+        display: inline-block;
+    }
+    
+    .Input  {
+        outline: none;
+        border: 1px solid #ccc;
+        background-color: white;
+        display: inline-block;
+        width: 200px;
+        
+    }
+    
+    
+    .InputDet {
+        border: 1px solid #ccc;
+        background-color: white;
+        width: 200px;
+    
+    }
+    
+    .Image {
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    .Box {
+        /* border: 3px solid black; */
+        padding: 20px;
+        padding-bottom: 40px;
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
+        
+    }
+    
+    /* .divs {
+        border: 1px solid black;
+        width: 600px;
+    } */
+    
+    .span1 {
+        display: block;
+        margin-bottom: -4px;
+        
+    }
+    
+    .or {
+        font-size: 0.8em;
+    }
+    .other {
+        width: 200px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        
+    }
+    
+    .firstDiv {
+        /* border: 1px solid yellow; */
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+       
+        height: 150px;
+        
+    }
+    
+    .secondDiv {
+        display: flex;
+        /* border: 1px solid yellow; */
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+       
+        height: 150px;
+        /* padding-left: 7%; */
+        justify-content: space-between;
+    
+    }
+    
+    .thirdDiv {
+        display: flex;
+        /* border: 1px solid yellow; */
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+       
+        height: 150px;  
+        justify-content: space-between;
+
+        /* padding-left: 7%; */
+        
+    
+    }
+    
+    .fourthDiv {
+        /* border: 1px solid yellow; */
+        border: 2px solid #eee;
+        box-shadow: 0 2px 3px rgb(124, 114, 114);
+        text-align: center;
+        padding-left: 0%;
+
+    }
+
+    .foudiv {
+        margin-bottom: 2%;
+
+    }
+}
+
+@media(max-width: 500px){
+
+    .Sell {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap
+    }
+    
+
+    
+    .Label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin:15px;
+    }
+    
+    .select {
+        width:150px;
+        display: inline-block;
+    }
+    
+    .Input  {
+        outline: none;
+        border: 1px solid #ccc;
+        background-color: white;
+        display: inline-block;
+        width: 200px;
+        
+    }
+    
+    
+    .InputDet {
+        border: 1px solid #ccc;
+        background-color: white;
+        width: 200px;
+    
+    }
+    
+    .Image {
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    .Box {
+        border: 3px solid black;
+        padding: 20px;
+        padding-bottom: 40px;
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
+        
+    }
+    
+    /* .divs {
+        border: 1px solid black;
+        width: 600px;
+    } */
+    
+    .span1 {
+        display: block;
+        margin-bottom: -4px;
+        
+    }
+    
+    .or {
+        font-size: 0.8em;
+    }
+    .other {
+        width: 200px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        
+    }
+  
+    
+.firstDiv {
+    /* border: 1px solid yellow; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    height: 150px;
+    
+}
+
+.secondDiv {
+    display: flex;
+    /* border: 1px solid yellow; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    flex-direction: column;
+    margin-top: 5%;
+    padding-bottom: 10%;
+    height: auto;
+
+    /* padding-left: 7%; */
+
+}
+
+.secdiv {
+    margin-bottom: 5%;
+}
+
+.thirdDiv {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-top: 5%;
+    padding-bottom: 10%;   
+    height: auto;
+ 
+}
+
+.thidiv {
+    margin-bottom: 5%;
+}
+
+
+.fourthDiv {
+    /* border: 1px solid yellow; */
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    text-align: center;
+    padding-left: 0%;
+    margin-top: 5%;
+    padding-bottom: 10%;  
+
+}
+
+.foudiv {
+    margin-bottom: 5%;
+}
+}

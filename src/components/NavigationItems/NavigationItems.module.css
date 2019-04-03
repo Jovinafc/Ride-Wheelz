@@ -1,0 +1,41 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.span {
+    display: block;
+    margin-left: -68%;
+}
+
+.span1 {
+    display: block;
+    margin-left: -78%;
+}
+
+.spanmyvehicles {
+    
+    display: block;
+    margin-left: -62%;
+}
+
+.spanhistory {
+    display: block;
+    margin-left: -52%;
+}
+
+
+@media (min-width: 500px){
+    .NavigationItems {
+        flex-flow: row;
+    }
+
+
+    
+}

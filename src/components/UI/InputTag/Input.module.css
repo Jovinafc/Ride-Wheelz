@@ -1,0 +1,43 @@
+.inputdiv {
+    padding-left: 10px;
+    /* border-radius: 2px 2px 2px 2px; */
+    outline: none;
+    border-radius: 10px;
+    border-color: black;
+    /* background-color: rgb(20, 19, 19); */
+    background-color: white;
+    /* color: bisque; */
+    color: black;
+    width: 50%;
+    opacity: 10%;
+}
+
+.inputdiv:focus {
+    background-color: rgb(29, 24, 24);
+    color: whitesmoke;
+    font-weight: 400;
+    
+}
+
+@media(max-width:500px){
+    .inputdiv {
+        padding-left: 10px;
+        /* border-radius: 2px 2px 2px 2px; */
+        outline: none;
+        border-radius: 10px;
+        border-color: black;
+        /* background-color: rgb(20, 19, 19); */
+        background-color: white;
+        /* color: bisque; */
+        color: black;
+        width: 80%;
+        opacity: 10%;
+    }
+    
+    .inputdiv:focus {
+        background-color: rgb(29, 24, 24);
+        color: whitesmoke;
+        font-weight: 400;
+        
+    }
+}

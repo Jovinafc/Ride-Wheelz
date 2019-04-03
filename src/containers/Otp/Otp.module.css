@@ -1,0 +1,45 @@
+.Container {
+    padding-top: 120px;
+}
+
+.Box {
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 30%;
+    text-align: center
+}
+
+.submit {
+    margin-bottom: 5%;
+}
+
+.Label {
+    text-align: center;
+    padding-left: 15%;
+}
+
+@media(max-width: 500px){
+    .Container {
+        padding-top: 120px;
+    }
+    
+    .Box {
+        border: 1px solid black;
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 30%;
+        text-align: center
+    }
+    
+    .submit {
+        margin-bottom: 5%;
+    }
+
+    
+.Label {
+    text-align: center;
+    padding-left: 0%;
+}
+    
+}

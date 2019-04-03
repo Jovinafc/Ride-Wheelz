@@ -1,0 +1,121 @@
+.Container {
+    width: 80%;
+    height: 250px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 30% 70% ; 
+    margin-left: 10%;
+
+}
+
+.rightDiv {
+    font-size: 1rem;
+}
+.ImageCon {
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    border: 1px solid grey;
+}
+
+.Image {
+    height: 95%;
+    width: 95%;
+    margin: 2.5%;
+}
+
+.topRightDiv {
+    display: flex;
+    /* grid-template-columns: auto auto ; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 15%;
+
+}
+
+.details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.downRightDiv {
+    margin-top: 2%;
+}
+
+.val {
+    color: blue;
+}
+
+.mod {
+    width: 400px;
+    height: 200px;
+    background-color: #E24B4B;
+    text-align: center;
+}
+
+
+.pass {
+    margin-right: 10%;
+    
+}
+
+@media(max-width:499px){
+    .Container {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+    }    
+
+    .div1 {
+        height: 40%;
+        width: 80%;
+        margin-left: 10%;
+    }    
+
+    
+.ImageCon {
+    height: 150px;
+    width: 90%;
+    margin: 5%;
+    border: 1px solid grey;
+}
+
+.Image {
+    height: 95%;
+    width: 95%;
+    margin: 2.5%;
+}
+
+    .head {
+        text-align: center;
+    }
+
+    .topRightDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: auto;
+        /* text-align: center; */
+        justify-content: space-between;
+    }
+
+    .downRightDiv {
+        text-align: center;
+    }
+
+
+
+}

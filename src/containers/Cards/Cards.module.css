@@ -1,0 +1,261 @@
+.search {
+     padding-top: 100px;
+}
+
+.Container {
+     display: flex;  
+     height: auto;   
+}
+
+.card {
+     width: 60%;
+     height: auto;
+}
+
+.Menu {
+     width: 20%;
+     height: auto;
+     /* height: 800px; */
+}
+
+.filterdiv {
+    display: none;
+}
+
+.filterbar{
+    height: 10px;
+}
+
+.Type {
+     background-color: #F0ECEC;
+}
+
+.Main {
+     width: 80%;
+     display: flex;
+     padding: 1%;
+     flex-wrap: wrap;
+     border-left: 1px solid black;  
+}
+
+.sidebarDiv {
+    display: none;
+}
+.type {
+     background-color: #D8D8D8;
+     margin-bottom: 20px; 
+}
+
+.slider {
+     margin-bottom: 60px;
+}
+
+.u-position-absolute {
+     position: absolute;
+ }
+ 
+ .u-position-relative {
+     position: relative;
+ }
+ 
+ .accordion {
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     border-radius: 2px;
+ }
+ 
+ .accordion__item + .accordion__item {
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ 
+ .accordion__item--has-icon {
+     position: relative;
+ }
+ 
+ .accordion__title {
+     background-color: #f4f4f4;
+     color: #444;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     text-align: left;
+     border: none;
+ }
+ 
+ .accordion__title:hover {
+     background-color: #ddd;
+ }
+ 
+ .accordion__body {
+     padding: 20px;
+     display: block;
+     animation: fadein 0.35s ease-in;
+ }
+ 
+ .accordion__body--hidden {
+     display: none;
+     opacity: 0;
+     animation: fadein 0.35s ease-in;
+ }
+ 
+ .accordion__title > *:last-child,
+ .accordion__body > *:last-child {
+     margin-bottom: 0;
+ }
+ 
+ .accordion__arrow {
+     display: inline-block;
+     position: relative;
+     width: 24px;
+     height: 12px;
+     position: absolute;
+     top: 50%;
+     right: 0;
+     margin-top: -6px;
+ }
+ 
+ .accordion__arrow::after,
+ .accordion__arrow::before {
+     display: block;
+     position: absolute;
+     top: 50%;
+     width: 10px;
+     height: 2px;
+     background-color: currentColor;
+     content: '';
+ }
+ 
+ .accordion__arrow::before {
+     left: 4px;
+     transform: rotate(45deg);
+ }
+ 
+ [aria-expanded='true'] .accordion__arrow::before,
+ [aria-selected='true'] .accordion__arrow::before {
+     transform: rotate(-45deg);
+ }
+ 
+ .accordion__arrow::after {
+     right: 4px;
+     transform: rotate(-45deg);
+ }
+ 
+ [aria-expanded='true'] .accordion__arrow::after,
+ [aria-selected='true'] .accordion__arrow::after {
+     transform: rotate(45deg);
+ }
+ 
+ .accordion__arrow::before,
+ .accordion__arrow::after {
+     transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+ }
+ 
+ /* -------------------------------------------------- */
+ /* ---------------- Animation part ------------------ */
+ /* -------------------------------------------------- */
+ 
+ @keyframes fadein {
+     0% {
+         opacity: 0;
+     }
+ 
+     100% {
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes move-down {
+     0% {
+         transform: translateY(0);
+     }
+     10% {
+         transform: translateY(0);
+     }
+     20% {
+         transform: translateY(5px);
+     }
+     30% {
+         transform: translateY(0);
+     }
+     100% {
+         transform: translateY(0);
+     }
+ }
+ 
+ @keyframes move-up {
+     0% {
+         transform: translateY(0);
+     }
+     10% {
+         transform: translateY(0);
+     }
+     20% {
+         transform: translateY(-5px);
+     }
+     30% {
+         transform: translateY(0);
+     }
+     100% {
+         transform: translateY(0);
+     }
+ }
+ 
+ .accordion__title--animated:hover .accordion__arrow {
+     animation-name: move-down;
+     animation-duration: 1.5s;
+ }
+ 
+ .accordion__title--animated[aria-expanded='true']:hover .accordion__arrow {
+     animation-name: move-up;
+     animation-duration: 1.5s;
+ }
+
+@media(max-width:500px) {
+     .Container {
+          width: 100%;
+          
+     }
+
+     .Menu {
+          display: none;
+     }
+
+     .Main {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+     }
+
+     .filterdiv {
+        display: flex;
+        flex-direction: row;
+        width: 15%;
+        margin-left: 15%;
+        margin-top: 10px;
+        z-index: 1;
+        
+    }
+
+    .searchDiv {
+        margin-right: 100%;
+    }
+     .filterbar {
+         height: 100%;
+         margin-top: 5;   
+         float: right;
+         z-index: 300
+     }
+
+     .sidebarDiv {
+         display: inline;
+     }
+
+     .MenuSide {
+         padding-top: 45%;
+     }
+
+/* 
+     .MenuSide {
+
+     } */
+}
+

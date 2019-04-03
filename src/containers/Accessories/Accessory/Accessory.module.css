@@ -1,0 +1,109 @@
+.CardContainer {
+    width: 30%;   
+    display: flex;
+    flex-direction: row;
+    margin: 18px;
+    justify-content: center;
+}
+
+
+.Card {
+    width: 80%;
+    height: 400px;
+    border: 1px solid rgba(238, 238, 238, 0.514);
+    box-shadow: 1px 1px 4px 2px rgb(100, 16, 16);
+    margin: 5%;
+    padding: 2%;
+    background-color: rgba(63, 57, 57, 0.747);
+   }
+
+
+   .ImageContainer {
+       width: 100%;
+       height: 60%;
+       align-content: center;
+   }
+
+   .na a {
+       color: white;
+   }
+
+   .content {
+        height: 40%;
+   }
+
+   .Image {
+       width: 95%;
+       height:90%;
+       margin: 2%; 
+       box-shadow: 0 2px 3px rgb(124, 114, 114);
+
+   }
+
+   .price {
+        display: grid;
+        grid-template-columns: 80% 20%;
+   }
+
+   .Price{
+       color: red;
+   }
+
+   .prices {
+       display: flex;
+       
+   }
+
+   .pd {
+        font-size: 0.8em;
+   }
+
+   .sell {
+      background: lightcoral;
+      width:100%;
+      height: 30px;
+      text-align: center;
+   }
+
+   .rent {
+     background: lightgreen;
+     width:100%;
+      height: 30px;
+     text-align: center;
+   }
+
+   .Name {
+       height: 20%;
+       word-wrap: break-word;
+
+   }
+
+   .na {
+       height: 100%;
+       font-size:medium
+   }
+
+
+
+   @media (max-width: 500px) {
+    .CardContainer {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* justify-content: center; */
+    }
+
+    
+.Card {
+    width: 90%;
+    height: 400px;
+    border: 1px solid rgba(238, 238, 238, 0.514);
+    box-shadow: 1px 1px 4px 2px rgb(100, 16, 16);
+    padding: 2%;
+    background-color: rgba(63, 57, 57, 0.747);
+   }
+   }
+
+   

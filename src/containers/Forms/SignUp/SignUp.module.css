@@ -1,0 +1,149 @@
+
+
+.Container {
+    background-color: #050004;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    height: 100%; 
+}
+
+
+.formCont {
+    margin-bottom: 50px;
+    color: white;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 1.3em;
+}
+
+.topForm {
+    padding-left: 35%;
+}
+
+.moddivCont {
+    width: 50%;
+    outline: none;
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+}
+.modernDiv {
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+    /* color: black; */
+    /* width: 50%; */
+    opacity: 10%;   
+}
+
+
+.modernDiv:focus {
+    background-color: rgb(29, 24, 24);
+    color: whitesmoke;
+    font-weight: 400;
+    
+}
+
+.form-control {
+  background-color: #141313;
+  border: none;
+  color: bisque;
+
+}
+
+.form-control:focus {
+  background-color: #1D1818;
+  border: none;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.save {
+    background-color: rgb(175, 7, 7);
+    border: none;
+    /* width: 8%; */
+}
+
+
+.register {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+@media(max-width:500px) {
+    
+
+.Container {
+    background-color: #050004;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    height: 100%; 
+}
+
+
+.formCont {
+    margin-bottom: 50px;
+    color: white;
+    width: 90%;
+    font-size: 1.3em;
+}
+
+.topForm {
+    padding-left: 10%;
+}
+
+.modernDiv {
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+    color: black;
+    
+    opacity: 10%;
+}
+
+.moddivCont {
+    width: 80%;
+    outline: none;
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+}
+
+
+.modernDiv:focus {
+    background-color: rgb(29, 24, 24);
+    color: whitesmoke;
+    font-weight: 400;
+    
+}
+
+.form-control {
+  background-color: #141313;
+  border: none;
+  color: bisque;
+
+}
+
+.form-control:focus {
+  background-color: #1D1818;
+  border: none;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.save {
+    background-color: rgb(175, 7, 7);
+    border: none;
+    
+}
+
+.register {
+    margin-top: 30px;
+    
+    width: 40%;
+    margin-left: 25%;
+}
+}

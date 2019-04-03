@@ -1,0 +1,161 @@
+.Container {
+    width: 100%;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 3px rgb(124, 114, 114);
+    height: 200px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.imageName {
+    width: 30%;
+    height: 90%;
+    margin-top: 10px;
+    margin-left: 10%;
+    /* border: 1px solid tan; */
+    padding-top: 1%; 
+}
+
+.inputDiv {
+    font-size: 12px;
+    margin: 0px 5px;
+    width: 40px;
+    text-align: center;
+} 
+
+.name {
+    height: 20%;
+}
+
+.ImageContainer {
+   height: 90%;
+}
+
+.Image {
+    height: 95%;
+    width: 95%;
+}
+
+.quantity {
+    /* border: 1px solid palegreen; */
+    width: 30%;
+    margin-left: 2%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.quant {
+    padding-left: 5%;
+    margin-top: 10%;
+}
+
+.priceDiv {
+    margin-top: 3%;
+}
+
+.input {
+    width: 2px;
+    size: 5;
+}
+
+/* .inputDiv {
+    width: 30px;
+    margin-left: 5px;
+
+    text-align: center;
+} */
+
+.btn {
+    margin-top: 10%;
+    background-color: black;
+    color: white; 
+}
+
+.buttonDiv {
+    padding: 50px;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.leftBut {
+    background-color: black;
+    color: white; 
+}
+
+@media(max-width:500px){
+    .Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+    }
+
+    .imageName {
+        width: 80%;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+    .quantity {
+        width: 60%;
+        margin-left: 18%;
+    }
+
+    .buttonDiv {
+        text-align: center;
+        margin-top: -10%;
+    }
+
+    
+    .inputDiv {
+        font-size: 12px;
+        margin: 0px 5px;
+        text-align: center;
+        width: 50px;
+    } 
+    
+    .name {
+        height: 10%;
+    }
+    
+    .ImageContainer {
+       height: 90%;
+    }
+    
+    .Image {
+        height: 95%;
+        width: 95%;
+    }
+    
+    .quant {
+        padding-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .priceDiv {
+        margin-top: 5%;
+    }
+    
+    .input {
+        width: 2px;
+        size: 5;
+    }
+    .inputDiv {
+        width: 30px;
+        margin-left: 5px;
+    
+        /* text-align: center; */
+    }
+    
+    .btn {
+        margin-top: 10%;
+        background-color: black;
+        color: white; 
+    }
+    
+    .leftBut {
+        background-color: black;
+        color: white; 
+    }
+}
