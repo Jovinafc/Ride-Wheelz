@@ -2,7 +2,7 @@ import axios from 'axios';
 import { connect} from 'react-redux'; 
 
 const instance = axios.create({
-    baseURL : 'http://localhost:3001/api'
+    baseURL : 'http://localhost:3001/api' || 'http:// 192.168.0.104:3001/api'
     // baseURL : 'http://localhost:3001'
     // baseURL : 'http://192.168.43.247:3001/api'
 

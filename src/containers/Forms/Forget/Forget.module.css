@@ -1,0 +1,27 @@
+.MainCont {
+    height: 500px;
+}
+
+.cont {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.smallcont {
+    padding-top: 20px;
+}
+
+@media(max-width: 500px){
+    .MainCont {
+        height: 500px;
+    }
+    
+    .cont {
+        text-align: center;
+        margin-top: 20%;
+    }
+    
+    .smallcont {
+        padding-top: 30px;
+    }   
+}

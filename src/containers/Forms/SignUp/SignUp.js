@@ -450,7 +450,7 @@ dateHandler = (moment) => {
             isError = true;
             this.setState({
              ...this.state,
-            emailError: 'Please Enter Correct ID'
+            emailError: 'Please Enter Valid Email Address'
 
             })
             errors.emailError = "Enter Valid Email Address"
@@ -483,7 +483,7 @@ dateHandler = (moment) => {
             isError = true;
             this.setState({
              ...this.state,
-            old_passwordError: 'Please Valid Password'
+            old_passwordError: 'Please Enter Valid Password'
 
             })
             errors.old_passwordError = "Enter Valid Password"

@@ -33,6 +33,7 @@ import Help from './containers/AboutUs/Help/Help';
 import Alert from 'react-s-alert';
 import About from './containers/AboutUs/About/About';
 import Contact from './containers/AboutUs/Contact/Contact';
+import Forget from './containers/Forms/Forget/Forget';
 import 'react-s-alert/dist/s-alert-default.css';
 import 'react-s-alert/dist/s-alert-css-effects/slide.css';
 import 'react-s-alert/dist/s-alert-css-effects/scale.css';
@@ -99,6 +100,7 @@ class App extends Component {
                 <Route path="/sell/sell" exact component={SellVehicle} />
                 <Route path="/vehicledetail/:vehicle_id"  component={VehicleDetail} />
                 <Route path="/productdetail/:product_id" component={ProductDetail} />
+                <Route path="/reset/:token" component={Forget} />
                 <Route path="/delete" exact component={Delete} />
                 <Route path="/cart" exact component={Cart} />
                 <Route path="/help" exact component={Help} />

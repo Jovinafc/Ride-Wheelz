@@ -5,12 +5,20 @@ import classes from './Login.module.css';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions/auth';
 import Spinner from '../../../components/UI/Spinner/Spinner';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import axios from '../../../axios';
+
+
 
 class Login extends Component {
     state = {
+        modalShowDoc: false,
+        modalemail: '',
         email: '',
         password: '',
         errorM: '',
+        modemailError: '',
         valid: true,
         emailError:false,
         passwordError: false,
@@ -74,7 +82,103 @@ class Login extends Component {
         }
     }
 
+    
+    submitHandlerDoc = (e) => {
+        this.setState({
+            modalShowDoc: false,
+            modalemail: '',
+            modemailError: ''
+        })
+    }
+
+    openmodal = (e) => {
+        e.preventDefault();
+        this.setState({
+            modalShowDoc: true
+        })
+    }
+
+    modemailHandler = (e) => {
+        e.preventDefault();
+
+        this.setState({
+            modalemail: e.target.value
+        })
+    }
+
+    validatemod = () => {
+        let isError = false;
+
+        if(this.state.modalemail === '') {
+            isError = true; 
+        }
+
+        let e = false;
+        let pattern = /\S+@\S+\.\S+/;
+        // let pattern = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"; 
+        if(this.state.modalemail.match(pattern)){
+            e = true;
+            this.setState({
+                ...this.state,
+                modemailError: ''
+            })
+       }
+
+        if(e === false) {
+            isError = true;
+            this.setState({
+             ...this.state,
+            modemailError: 'Please Enter Valid Email'
+
+            })
+        }
+
+
+        return isError;
+    }
+
+
+
+    submitHandlerModal = (e) => {
+
+        e.preventDefault();
+
+        const error = this.validatemod();
+        if(!error){
+            axios.get(`/reset/${this.state.modalemail}`)
+        .then(res => {
+            if(res.data === 'User not found'){
+                
+            this.setState({
+                modemailError: res.data
+            })
+
+            }
+            else {
+                this.setState({
+                    modemailError: 'Check your email',
+                    modalemail: '',
+                    
+                })
+            }
+            
+        })
+        .catch(err => {
+            
+        })
+        }
+
+        
+        // this.setState({
+
+        // })
+    }
+
+     modalCloseDoc = () => this.setState({ modalShowDoc: false, modalemail: '', modemailError: '' });
+
     render () {
+
+
         const {email, password} = this.state;
 
         const enabled = email.length > 0 && password.length > 0;
@@ -104,6 +208,43 @@ class Login extends Component {
                          <br />
                  </div>
                 <button disabled={!enabled} className="btn btn-primary" > Login</button>
+                <Modal
+        show={this.state.modalShowDoc}
+        onHide={this.modalCloseDoc}
+        size="sg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+                 <div className={classes.modalHeader}>
+                     Forgot Password?
+                </div>      
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+                <div className={classes.modbody}>
+                <p>Enter Your Email Id</p>
+                <input type="text"  value={this.state.modalemail} onChange={this.modemailHandler}/>
+                <br />
+                <span style={{color: 'red'}}>{this.state.modemailError}</span>
+                </div>
+        </Modal.Body>
+        <Modal.Footer>
+         <Button onClick={this.submitHandlerDoc}>Close</Button>  
+          <Button onClick={this.submitHandlerModal}>Submit</Button>
+        </Modal.Footer>
+      </Modal>    
+            
+
+                < br />
+                <br />
+                <button 
+                style={{textDecoration: 'none', backgroundColor: 'white', border: 'none'}} 
+                onClick={this.openmodal}>Forgot Password?</button>
+                <br />
+                <br />
+
                         <p>Not Registered?  <NavLink to="/SignUp">Sign Up Here</NavLink></p>
             </div>
     );
